@@ -30,6 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro__inner {
+    text-align: center;
     color: #fff;
     width: 100%;
     max-width: 880px;
@@ -40,15 +41,24 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 150px;
     font-weight: bold;
     text-transform: uppercase;
-    text-align: center;
     line-height: 1;
 }
 
+.intro__title:after {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: white;
+    margin: 60px auto 0;
+
+}
+
 .intro__suptitle {
-    font-size: 42px;
+    font-size: 72px;
     color: #fff;
     font-family: 'Kaushan Script', cursive;
-    text-align: center;
+    
 }
 
 
@@ -112,4 +122,29 @@ h1, h2, h3, h4, h5, h6 {
 .nav__link:hover:after {
     display: block;
 
+}
+
+
+
+/* Button */
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+    margin-top: 50px;
+
+    border: 3px solid #fff;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+}
+
+.btn:hover {
+    border: 3px solid #f38181;
+    color: #fce38a;
+    background-color: #f38181;
+    transition: .5s;
 }
