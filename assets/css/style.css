@@ -26,10 +26,25 @@ h1, h2, h3, h4, h5, h6 {
     background: url("../images/intro.jpg")center, no-repeat;
 }
 
+.intro__inner {
+    color: #fff;
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.intro__title {
+    font-size: 150px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+}
 
 
 /* Header */
 .header {
+    padding-top: 30px;
     position: absolute;
     top: 0;
     left: 0;
@@ -38,8 +53,53 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header__logo {
     font-size: 30px;
     font-weight: bold;
     color: #fff;
+}
+
+
+
+/* NAVBAR */
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+
+.nav__link:after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    color: white;
+    display: none;
+    z-index: 100;
+    top: 100%;
+    left: 0;
+    background-color: yellow;
+}
+
+.nav__link:hover {
+    color: yellow;
+}
+
+.nav__link:hover:after {
+    display: block;
+
 }
